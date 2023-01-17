@@ -9,22 +9,30 @@ import { SettingOutlined } from "@ant-design/icons";
 
 const group = "windows";
 
-const pages = [
+const menu = [
   { key: "1", label: "wsl" },
   { key: "2", label: "utility" },
 ];
 
-const items = [getItem(group, <SettingOutlined />, group, [getItem(pages[0].key, pages[0].label), getItem(pages[1].key, pages[1].label)], group)];
+const items = [
+  getItem(
+    group,
+    <SettingOutlined />,
+    group,
+    menu.map((item, index) => getItem(item.key, <SettingOutlined />, item.label)),
+    group
+  ),
+];
 
 export default function Windows() {
-  const [url, setURL] = useState(`/${group}/${pages[0].label}.md`);
+  const [url, setURL] = useState(`/${group}/${menu[0].label}.md`);
 
   useEffect(() => {
     return () => {};
   }, []);
 
   const onSelect = (key) => {
-    setURL(`/${group}/${pages[Number(key) - 1].label}.md`);
+    setURL(`/${group}/${menu[Number(key) - 1].label}.md`);
 
     console.log(key, url);
   };
