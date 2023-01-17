@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import SideMenu, { getItem } from "../components/SideMenu";
 import Reader from "../components/Reader";
 
-import { SettingOutlined } from "@ant-design/icons";
+import { AppstoreOutlined, SettingOutlined } from "@ant-design/icons";
 
 const group = "users";
 
@@ -18,7 +18,7 @@ const menu = [
 const items = [
   getItem(
     group,
-    <SettingOutlined />,
+    <AppstoreOutlined />,
     group,
     menu.map((item, index) => getItem(item.key, <SettingOutlined />, item.label)),
     group
