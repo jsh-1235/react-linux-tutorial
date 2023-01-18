@@ -1,4 +1,4 @@
-import styles from "./Users.module.css";
+import styles from "./Account.module.css";
 
 import React, { useState, useEffect } from "react";
 
@@ -7,12 +7,13 @@ import Reader from "../components/Reader";
 
 import { AppstoreOutlined, SettingOutlined } from "@ant-design/icons";
 
-const group = "users";
+const group = "account";
 
 const menu = [
   { key: "1", label: "user" },
   { key: "2", label: "group" },
   { key: "3", label: "login" },
+  { key: "4", label: "terminal" },
 ];
 
 const items = [
@@ -25,7 +26,7 @@ const items = [
   ),
 ];
 
-export default function Users() {
+export default function Account() {
   const [url, setURL] = useState(`/${group}/${menu[0].label}.md`);
 
   useEffect(() => {

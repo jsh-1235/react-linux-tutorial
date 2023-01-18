@@ -10,10 +10,10 @@ import { Layout, Menu } from "antd";
 
 const { Header, Footer, Sider, Content } = Layout;
 
-const pages = ["windows", "users", "utility"];
+const pages = ["windows", "account", "utility"];
 
 const Windows = React.lazy(() => import("./pages/Windows.js"));
-const Users = React.lazy(() => import("./pages/Users"));
+const Account = React.lazy(() => import("./pages/Account"));
 const Utility = React.lazy(() => import("./pages/Utility.js"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 
@@ -85,7 +85,7 @@ function App() {
                 <Route path="/Windows" element={<Windows />}>
                   <Route path=":id" element={<Windows />} />
                 </Route>
-                <Route path="/users" element={<Users />} />
+                <Route path="/account" element={<Account />} />
                 <Route path="/utility" element={<Utility />} />
                 <Route path="/*" element={<NotFound />} />
               </Routes>
