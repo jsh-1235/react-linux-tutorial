@@ -1,49 +1,60 @@
 # login
 
-## w (Show who is logged on and what they are doing.)
+## w
 
-- 접속한 사용자 정보 보기
+> ### Show who is logged on and what they are doing.
+
 - w
 - w -h (do not print header)
 - w -f (show remote hostname field)
 - w -s (short format)
 - w -o (old style output)
 
-## who (show who is logged on)
+## who
 
-- 현재 시스템에 로그인한 모든 사용자를 출력
+> ### show who is logged on
+
 - who
-- who -H (헤더라인 출력)
-- who -m (whoami)
-- who -q (로그인명과 로그인한 횟수 출력)
+- who -H (print line of column headings)
+- who -m (only hostname and user associated with stdin)
+- who -q (all login names and number of users logged on)
 
-## logname (print user´s login name)
+## logname
 
-- logname (시스템에 로그인한 사용자명 출력)
+> Print the name of the current user.
 
-## whoami (print effective userid)
+- logname
 
-- 현재 시스템을 사용하고 있는 자신이 누구인지 확인
+## whoami
+
+> Print the user name associated with the current effective user ID.
+
 - whoami
-- Print the user name associated with the current effective user ID. Same as id -un.
 
-## who am i (show who is logged on)
+## who am i
 
-- 'whoami' 명령어 보다 더 상세하게 정보를 보여준다.
+> Print information about users who are currently logged in.
+
 - who am i
 - who am i -aH
 
-## users (print the user names of users currently logged in to the current host)
+## users
 
-- 시스템 로그인한 사용자 정보를 출력하는 명령어이다.
+> Output who is currently logged in according to FILE.
+>
+> print the user names of users currently logged in to the current host
+
 - users
 
-## id (print real and effective user and group IDs)
+## id
+
+> Print user and group information for each specified USER or (when USER omitted) for the current user
+>
+> print real and effective user and group IDs
 
 - id
 - id -u
 - id -g
-
-- id [-Ggun] manager
 - id -u manager
 - id -gn manager
+- id -Gn
