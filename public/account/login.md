@@ -136,12 +136,16 @@
 
 > begin session on the system
 
-- login
-  - su - manager
-  - su --login manager
+- su - manager
+- su --login manager
+
+## logout
+
+> write utmp and wtmp entries
+
 - logout
-  - exit
-  - logout
+- exit
+  - The exit() function causes normal process termination and the value of status & 0xFF is returned to the parent.
 
 ## su
 
