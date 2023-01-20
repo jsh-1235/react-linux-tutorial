@@ -1,5 +1,4 @@
 import "./Common.css";
-import styles from "./Utility.module.css";
 
 import React, { useState, useEffect } from "react";
 
@@ -13,6 +12,7 @@ const group = "utility";
 const menu = [
   { key: "1", label: "funny" },
   { key: "2", label: "help" },
+  { key: "3", label: "history" },
 ];
 
 const items = [

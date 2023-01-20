@@ -1,5 +1,4 @@
 import "./Common.css";
-import styles from "./Account.module.css";
 
 import React, { useState, useEffect } from "react";
 

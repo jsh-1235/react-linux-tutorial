@@ -1,5 +1,4 @@
 import "./Common.css";
-import styles from "./Windows.module.css";
 
 import React, { useState, useEffect } from "react";
 
