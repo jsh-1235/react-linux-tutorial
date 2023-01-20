@@ -92,7 +92,7 @@ function App() {
             </Suspense>
           </Content>
         </Layout>
-        <footer className="footer">It is ©2018 Created by BT Inc</footer>
+        <footer className="footer">It is ©2018 Created by JSH</footer>
       </Layout>
     </>
   );
