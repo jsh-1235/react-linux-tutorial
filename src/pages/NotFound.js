@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Empty, Button } from "antd";
 
 function NotFound() {

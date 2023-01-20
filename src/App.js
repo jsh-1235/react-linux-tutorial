@@ -77,21 +77,19 @@ function App() {
               };
             })}></Menu>
         </Header>
-        <Layout>
-          <Content style={{ margin: match ? "20px" : "10px" }}>
-            <Suspense fallback={<div>Loading...</div>}>
-              <Routes>
-                <Route path="/" element={<Windows />} />
-                <Route path="/Windows" element={<Windows />}>
-                  <Route path=":id" element={<Windows />} />
-                </Route>
-                <Route path="/account" element={<Account />} />
-                <Route path="/utility" element={<Utility />} />
-                <Route path="/*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </Content>
-        </Layout>
+        <Content style={{ margin: match ? "20px" : "10px" }}>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Windows />} />
+              <Route path="/Windows" element={<Windows />}>
+                <Route path=":id" element={<Windows />} />
+              </Route>
+              <Route path="/account" element={<Account />} />
+              <Route path="/utility" element={<Utility />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </Content>
         <footer className="footer">It is ©2018 Created by JSH</footer>
       </Layout>
     </>
