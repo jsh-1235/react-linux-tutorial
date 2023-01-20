@@ -4,9 +4,9 @@ import React, { useState, useEffect, Suspense } from "react";
 
 import { Route, Routes, Link, useNavigate, useLocation } from "react-router-dom";
 
-import { AppstoreOutlined } from "@ant-design/icons";
-
 import { Layout, Menu } from "antd";
+
+import { AppstoreOutlined } from "@ant-design/icons";
 
 const { Header, Footer, Sider, Content } = Layout;
 

@@ -1,3 +1,4 @@
+import "./Common.css";
 import styles from "./Windows.module.css";
 
 import React, { useState, useEffect } from "react";
@@ -42,7 +43,7 @@ export default function Windows() {
   }, [url]);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <SideMenu items={items} onSelect={onSelect} />
       <Reader url={url} />
     </div>

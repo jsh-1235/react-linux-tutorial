@@ -1,3 +1,4 @@
+import "./Common.css";
 import styles from "./Account.module.css";
 
 import React, { useState, useEffect } from "react";
@@ -44,7 +45,7 @@ export default function Account() {
   }, [url]);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <SideMenu items={items} onSelect={onSelect} />
       <Reader url={url} />
     </div>
